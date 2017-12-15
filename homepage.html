@@ -16,7 +16,7 @@
             <div class="card-body">
                 <ul class="nav nav-pills nav-fill">
                     <li class="nav-item">
-                        <a class="nav-link active" href="304cem.html">Home</a>
+                        <a class="nav-link active" href="homepage.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="favouritefilms.html">Favourite List</a>
@@ -62,33 +62,43 @@
                             <tbody>
                             <tr>
                                 <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
+                                <td>Harry Potter</td>
+                                <td>Fantasy</td>
+                                <td>2002</td>
+                                <td>7</td>
+                                <td>8</td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
+                                <td>Star Wars</td>
+                                <td>Fantasy</td>
+                                <td>2001</td>
+                                <td>7</td>
+                                <td>7</td>
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
+                                <td>Interstellar</td>
+                                <td>Thriller</td>
+                                <td>2012</td>
+                                <td>9</td>
+                                <td>8</td>
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
+                                <td>Looper</td>
+                                <td>Fantasy/Action</td>
+                                <td>2011</td>
+                                <td>7</td>
+                                <td>6</td>
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
+                                <td>Die Hard</td>
+                                <td>Action</td>
+                                <td>1985</td>
+                                <td>7</td>
+                                <td>7</td>
                             </tr>
                             </tbody>
                         </table>
@@ -100,26 +110,26 @@
                     <div class="card card-success">
                         <div class="card-header" style="border-color: blue">Add a film</div>
                         <div class="card-body">
-                            <form>
+                            <form method="get">
                                 <div class="form-group">
-                                    <label for="filmname1">Film Name</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1">
+                                    <label for="filmName">Film Name</label>
+                                    <input type="text" class="form-control" id="filmName">
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputPassword1">Film Genre</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                    <label for="filmGenre">Film Genre</label>
+                                    <input type="text" class="form-control" id="filmGenre">
                                 </div>
                                 <div class="form-group">
-                                    <label for="filmname1">Year Released</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1">
+                                    <label for="yearReleased">Year Released</label>
+                                    <input type="text" class="form-control" id="yearReleased">
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputPassword1">User Rating</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                    <label for="userRating">User Rating</label>
+                                    <input type="text" class="form-control" id="userRating">
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputPassword1">Critic Rating</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                    <label for="criticRating">Critic Rating</label>
+                                    <input type="text" class="form-control" id="criticRating">
                                 </div>
                                 <div class="form-check">
                                     <label class="form-check-label">
@@ -127,7 +137,7 @@
                                         Add Film
                                     </label>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="btn btn-primary" onclick="return addFilm(this.form)">Submit</button>
                             </form>
                         </div>
                     </div>

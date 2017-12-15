@@ -16,7 +16,7 @@
         <div class="card-body">
             <ul class="nav nav-pills nav-fill">
             <li class="nav-item">
-                <a class="nav-link" href="304cem.html">Home</a>
+                <a class="nav-link" href="homepage.html">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="favouritefilms.html">Favourite List</a>
@@ -48,7 +48,7 @@
             <div class="card card-success">
                 <div class="card-header" style="border-color: blue"><a class="nav-link" href="register.html">Don't have a user account? Register here</a></div>
                 <div class="card-body">
-                    <form>
+                    <form method="get">
                         <div class="form-group">
                             <label for="username">Username</label>
                             <input type="text" class="form-control" id="username" placeholder="Enter username">
@@ -63,7 +63,7 @@
                                 Login
                             </label>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary" onclick="log()">Submit</button>
                     </form>
                 </div>
             </div>
