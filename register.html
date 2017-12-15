@@ -48,22 +48,22 @@
             <div class="card card-success">
                 <div class="card-header" style="border-color: blue"><a class="nav-link" href="login.html">Already have an account? Log in here</a></div>
                 <div class="card-body">
-                    <form>
+                    <form method="post" action="register.html">
                         <div class="form-group">
-                            <label for="inputUsername">Username</label>
-                            <input type="text" class="form-control" id="inputUsername"placeholder="Enter a username">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username"placeholder="Enter a username">
                         </div>
                         <div class="form-group">
-                            <label for="inputEmail">Email address</label>
-                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email address">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email address">
                         </div>
                         <div class="form-group">
-                            <label for="inputPassword">Password</label>
-                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword2">Re-enter password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Re-enter password">
+                            <label for="password2">Re-enter password</label>
+                            <input type="password" class="form-control" id="password2" placeholder="Re-enter password">
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
@@ -71,7 +71,7 @@
                                 Register
                             </label>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary" value="register" onclick="user()">Submit</button>
                     </form>
                 </div>
             </div>
@@ -86,6 +86,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>
 
-<script>
+<script type="text/javascript" src="database.js">
 </script>
 </html>

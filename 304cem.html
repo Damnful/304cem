@@ -48,20 +48,87 @@
                 <div class="card card-success">
                     <div class="card-header" style="border-color: blue">User Recommended Films</div>
                     <div class="card-body">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Film Name</th>
+                                <th scope="col">Film Genre</th>
+                                <th scope="col">Year Released</th>
+                                <th scope="col">User Rating</th>
+                                <th scope="col">Critic Rating</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
 
             </div>
                 <div class="col-sm-4 col-xs-6">
                     <div class="card card-success">
-                        <div class="card-header" style="border-color: blue">Film of the Week</div>
+                        <div class="card-header" style="border-color: blue">Add a film</div>
                         <div class="card-body">
-                            <label style="font-weight: bold; text-align: center;">Star Wars: The Last Jedi</label>
-                            <img src="starwars1.jpg" class="img-thumbnail">
-                            <label style="text-align: center;">Genre: Fantasy/Science</label><br>
-                            <label style="text-align: center;">Year Released: 2017</label><br>
-                            <label style="text-align: center;">User Rating: 8.8/10</label><br>
-                            <label style="text-align: center;">Critic Rating: 8.3/10</label><br>
+                            <form>
+                                <div class="form-group">
+                                    <label for="filmname1">Film Name</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Film Genre</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="form-group">
+                                    <label for="filmname1">Year Released</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">User Rating</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Critic Rating</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        Add Film
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
                         </div>
                     </div>
                 </div>
